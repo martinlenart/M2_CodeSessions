@@ -22,9 +22,27 @@ namespace MethodsExercise
         {
 			PlayingCard card1 = new PlayingCard 
 			{ Color = PlayingCardColor.Clubs, Value = PlayingCardValue.Queen };
+	
+			PlayingCard card2 = new PlayingCard
+			{ Color = PlayingCardColor.Clubs, Value = PlayingCardValue.Ace };
 
-			Console.WriteLine(FaceOrValue(card1.Value));
-        }
+			string s1 = FaceOrValue(card1.Value);
+			Console.WriteLine(s1);
+
+			Console.WriteLine(HasSameColor(card1, card2)); // true or false
+
+			bool same = HasSameColor(card1, card2, out _);
+
+			string myColor;
+			bool same1 = HasSameColor(card1, card2, out myColor);
+
+			if (same1)
+            {
+				Console.WriteLine($"Both cards are of the same color which is {myColor}");
+            }
+
+
+		}
 
 		static string FaceOrValue(PlayingCardValue pcValue)
         {
@@ -49,11 +67,11 @@ namespace MethodsExercise
 			return "Red";
         }
 
-		static bool HasSameColor(PlayingCard card1, PlayingCard card2)
+		static bool HasSameColor(PlayingCard card1, PlayingCard card2, out string color)
         {
+			color = RedOrBlack(card1.Color);
 			return card1.Color == card2.Color;
         }
-		static bool HasSameColor1 (PlayingCard card1, PlayingCard card2) => card1.Color == card2.Color;
-		}
+		static bool HasSameColor (PlayingCard card1, PlayingCard card2) => card1.Color == card2.Color;
 	}
 }
