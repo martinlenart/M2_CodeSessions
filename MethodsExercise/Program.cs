@@ -39,7 +39,21 @@ namespace MethodsExercise
             {
 				return "Value";
             }
-
         }
-    }
+		static string RedOrBlack(PlayingCardColor pcColor)
+        {
+			if (pcColor == PlayingCardColor.Clubs ||
+				pcColor == PlayingCardColor.Spades)
+				return "Black";
+
+			return "Red";
+        }
+
+		static bool HasSameColor(PlayingCard card1, PlayingCard card2)
+        {
+			return card1.Color == card2.Color;
+        }
+		static bool HasSameColor1 (PlayingCard card1, PlayingCard card2) => card1.Color == card2.Color;
+		}
+	}
 }
