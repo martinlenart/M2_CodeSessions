@@ -1,0 +1,45 @@
+﻿using System;
+
+namespace MethodsExercise
+{
+	public enum PlayingCardColor
+	{
+		Clubs, Diamonds, Hearts, Spades         // Poker suit order, Spades highest
+	}
+	public enum PlayingCardValue
+	{
+		Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten,
+		Knight, Queen, King, Ace                // Poker Value order
+	}
+	public struct PlayingCard
+	{
+		public PlayingCardColor Color;
+		public PlayingCardValue Value;
+	}
+	class Program
+    {
+        static void Main(string[] args)
+        {
+			PlayingCard card1 = new PlayingCard 
+			{ Color = PlayingCardColor.Clubs, Value = PlayingCardValue.Queen };
+
+			Console.WriteLine(FaceOrValue(card1.Value));
+        }
+
+		static string FaceOrValue(PlayingCardValue pcValue)
+        {
+            if (pcValue == PlayingCardValue.Knight ||
+				pcValue == PlayingCardValue.Queen ||
+				pcValue == PlayingCardValue.King ||
+				pcValue == PlayingCardValue.Ace)
+            {
+				return "Face";
+            }
+            else
+            {
+				return "Value";
+            }
+
+        }
+    }
+}

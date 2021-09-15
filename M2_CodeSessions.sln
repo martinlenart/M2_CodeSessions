@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayExercise", "ArrayExerc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayExercise1", "ArrayExercise1\ArrayExercise1.csproj", "{D8CC01C4-497A-4AD2-B2F3-BDC493DE2B07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayExercise2", "ArrayExercise2\ArrayExercise2.csproj", "{7C432BB6-3796-4B22-89CC-82C68FBF983F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayExercise2", "ArrayExercise2\ArrayExercise2.csproj", "{7C432BB6-3796-4B22-89CC-82C68FBF983F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsExercise", "MethodsExercise\MethodsExercise.csproj", "{0C7FCB47-8F18-411F-8016-20A4707526A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{7C432BB6-3796-4B22-89CC-82C68FBF983F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C432BB6-3796-4B22-89CC-82C68FBF983F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C432BB6-3796-4B22-89CC-82C68FBF983F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C7FCB47-8F18-411F-8016-20A4707526A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C7FCB47-8F18-411F-8016-20A4707526A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C7FCB47-8F18-411F-8016-20A4707526A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C7FCB47-8F18-411F-8016-20A4707526A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
