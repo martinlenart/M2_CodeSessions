@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WineCellar", "WineCellar\Wi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NestedLoops", "NestedLoops\NestedLoops.csproj", "{43C14724-1F7E-4C85-9E5E-CCA65EB6629D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayExercise", "ArrayExercise\ArrayExercise.csproj", "{0443613D-DFC7-4187-87E0-9CF987A58F38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayExercise", "ArrayExercise\ArrayExercise.csproj", "{0443613D-DFC7-4187-87E0-9CF987A58F38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayExercise1", "ArrayExercise1\ArrayExercise1.csproj", "{D8CC01C4-497A-4AD2-B2F3-BDC493DE2B07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayExercise1", "ArrayExercise1\ArrayExercise1.csproj", "{D8CC01C4-497A-4AD2-B2F3-BDC493DE2B07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayExercise2", "ArrayExercise2\ArrayExercise2.csproj", "{7C432BB6-3796-4B22-89CC-82C68FBF983F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{D8CC01C4-497A-4AD2-B2F3-BDC493DE2B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8CC01C4-497A-4AD2-B2F3-BDC493DE2B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8CC01C4-497A-4AD2-B2F3-BDC493DE2B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C432BB6-3796-4B22-89CC-82C68FBF983F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C432BB6-3796-4B22-89CC-82C68FBF983F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C432BB6-3796-4B22-89CC-82C68FBF983F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C432BB6-3796-4B22-89CC-82C68FBF983F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
