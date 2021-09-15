@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayExercise2", "ArrayExer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsExercise", "MethodsExercise\MethodsExercise.csproj", "{0C7FCB47-8F18-411F-8016-20A4707526A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeStructure", "CodeStructure\CodeStructure.csproj", "{C80EB216-FF14-411B-8F71-08337298D495}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{0C7FCB47-8F18-411F-8016-20A4707526A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C7FCB47-8F18-411F-8016-20A4707526A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C7FCB47-8F18-411F-8016-20A4707526A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C80EB216-FF14-411B-8F71-08337298D495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C80EB216-FF14-411B-8F71-08337298D495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C80EB216-FF14-411B-8F71-08337298D495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C80EB216-FF14-411B-8F71-08337298D495}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
