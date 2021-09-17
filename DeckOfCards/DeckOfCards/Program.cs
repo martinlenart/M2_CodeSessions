@@ -4,7 +4,7 @@ namespace DeckOfCards
 {
 	public enum PlayingCardColor
 	{
-		Clubs, Diamonds, Hearts, Spades			// Poker suit order, Spades highest
+		Clubs = 0, Diamonds, Hearts, Spades			// Poker suit order, Spades highest
 	}
 	public enum PlayingCardValue
 	{
@@ -15,6 +15,34 @@ namespace DeckOfCards
 	{
 		public PlayingCardColor Color;
 		public PlayingCardValue Value;
+
+		string FaceOrValue()
+		{
+			string sRet;
+			switch (Value)
+			{
+				case PlayingCardValue.Ace:
+				case PlayingCardValue.Knight:
+				case PlayingCardValue.Queen:
+				case PlayingCardValue.King:
+					sRet = "Face";
+					break;
+
+				default:
+					sRet = "Value";
+					break;
+			}
+			return sRet;
+		}
+		string BlackOrRed()
+		{
+			if (Color == PlayingCardColor.Clubs || Color == PlayingCardColor.Spades)
+				return "Black";
+
+			return "Red";
+		}
+		public string PrintOut() => $"{Value} of {Color}, a {BlackOrRed()} {FaceOrValue()} card";
+
 	}
 	class Program
     {
@@ -29,6 +57,43 @@ namespace DeckOfCards
 			Console.WriteLine($"card2 is an {card2.Value} of {card2.Color}");
 			Console.WriteLine($"card3 is an {card3.Value} of {card3.Color}");
 			Console.WriteLine($"card4 is an {card4.Value} of {card4.Color}");
+
+			PlayingCard[] deckOfCards = new PlayingCard[52];
+
+			deckOfCards[0] = new PlayingCard { Value = PlayingCardValue.Two, Color = PlayingCardColor.Spades };
+			deckOfCards[1] = new PlayingCard { Value = PlayingCardValue.Three, Color = PlayingCardColor.Spades };
+
+/*			// Just to show int is the underlying type of enums
+			int cardNr = 0;
+			for (int c = (int) PlayingCardColor.Clubs; c<= (int)PlayingCardColor.Spades; c++)
+            {
+                for (int v = (int) PlayingCardValue.Two; v <= (int)PlayingCardValue.Ace; v++)
+                {
+					deckOfCards[cardNr++] = new PlayingCard { 
+						Color = (PlayingCardColor) c, 
+						Value = (PlayingCardValue) v };
+                }
+            }
+*/
+			int cardNr1 = 0;
+			for (PlayingCardColor c = PlayingCardColor.Clubs; c <= PlayingCardColor.Spades; c++)
+			{
+				for (PlayingCardValue v = PlayingCardValue.Two; v <= PlayingCardValue.Ace; v++)
+				{
+					deckOfCards[cardNr1++] = new PlayingCard
+					{
+						Color = c,
+						Value = v
+					};
+				}
+			}
+
+			Console.WriteLine("The complete deck");
+            foreach (var item in deckOfCards)
+            {
+				Console.WriteLine(item.PrintOut());
+            }
+
 		}
 	}
 }
