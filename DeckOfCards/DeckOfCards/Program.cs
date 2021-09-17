@@ -63,18 +63,9 @@ namespace DeckOfCards
 			deckOfCards[0] = new PlayingCard { Value = PlayingCardValue.Two, Color = PlayingCardColor.Spades };
 			deckOfCards[1] = new PlayingCard { Value = PlayingCardValue.Three, Color = PlayingCardColor.Spades };
 
-/*			// Just to show int is the underlying type of enums
-			int cardNr = 0;
-			for (int c = (int) PlayingCardColor.Clubs; c<= (int)PlayingCardColor.Spades; c++)
-            {
-                for (int v = (int) PlayingCardValue.Two; v <= (int)PlayingCardValue.Ace; v++)
-                {
-					deckOfCards[cardNr++] = new PlayingCard { 
-						Color = (PlayingCardColor) c, 
-						Value = (PlayingCardValue) v };
-                }
-            }
-*/
+
+			//You can loop in a for-loop using an enum instead of an int. Remember int is the underlying type of
+			//an enum
 			int cardNr1 = 0;
 			for (PlayingCardColor c = PlayingCardColor.Clubs; c <= PlayingCardColor.Spades; c++)
 			{
