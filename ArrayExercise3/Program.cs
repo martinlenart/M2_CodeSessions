@@ -11,8 +11,14 @@ namespace ArrayExercise3
             string search = "Martin";
             bool found;
 
-            FindString(stringArray, search, out found);
+            FindString(stringArray, "Martin", out found);
+            if (found)
+            {
+                Console.WriteLine();
+                Console.WriteLine($"{search} found");
+            }
 
+            FindString(stringArray, "Alexandra", out found);
             if (found)
             {
                 Console.WriteLine();
