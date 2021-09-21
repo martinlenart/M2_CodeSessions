@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassNames", "ClassNames\Cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueReference", "ValueReference\ValueReference.csproj", "{23A42D83-F82C-4BC7-9A4D-45C261E9A917}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorHandling", "ErrorHandling\ErrorHandling.csproj", "{22651E9B-E78B-48E0-83B9-A1F49816E3F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{23A42D83-F82C-4BC7-9A4D-45C261E9A917}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23A42D83-F82C-4BC7-9A4D-45C261E9A917}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23A42D83-F82C-4BC7-9A4D-45C261E9A917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22651E9B-E78B-48E0-83B9-A1F49816E3F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22651E9B-E78B-48E0-83B9-A1F49816E3F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22651E9B-E78B-48E0-83B9-A1F49816E3F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22651E9B-E78B-48E0-83B9-A1F49816E3F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
