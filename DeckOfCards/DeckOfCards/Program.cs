@@ -63,10 +63,10 @@ namespace DeckOfCards
 			deckOfCards[0] = new PlayingCard { Value = PlayingCardValue.Two, Color = PlayingCardColor.Spades };
 			deckOfCards[1] = new PlayingCard { Value = PlayingCardValue.Three, Color = PlayingCardColor.Spades };
 
-
-			//You can loop in a for-loop using an enum.
-			//Remember int is the underlying type of an enum
-			int cardNr1 = 0;
+            #region init a fresh deck
+            //You can loop in a for-loop using an enum.
+            //Remember int is the underlying type of an enum
+            int cardNr1 = 0;
 			for (PlayingCardColor color = PlayingCardColor.Clubs; color <= PlayingCardColor.Spades; color++)
 			{
 				for (PlayingCardValue value = PlayingCardValue.Two; value <= PlayingCardValue.Ace; value++)
@@ -100,6 +100,7 @@ namespace DeckOfCards
 					cardNr1++;
 				}
 			}
+			#endregion
 
 
 			Console.WriteLine("The complete deck");
