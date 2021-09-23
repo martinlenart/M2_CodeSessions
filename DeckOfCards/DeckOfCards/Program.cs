@@ -64,20 +64,43 @@ namespace DeckOfCards
 			deckOfCards[1] = new PlayingCard { Value = PlayingCardValue.Three, Color = PlayingCardColor.Spades };
 
 
-			//You can loop in a for-loop using an enum instead of an int. Remember int is the underlying type of
-			//an enum
+			//You can loop in a for-loop using an enum.
+			//Remember int is the underlying type of an enum
 			int cardNr1 = 0;
-			for (PlayingCardColor c = PlayingCardColor.Clubs; c <= PlayingCardColor.Spades; c++)
+			for (PlayingCardColor color = PlayingCardColor.Clubs; color <= PlayingCardColor.Spades; color++)
 			{
-				for (PlayingCardValue v = PlayingCardValue.Two; v <= PlayingCardValue.Ace; v++)
+				for (PlayingCardValue value = PlayingCardValue.Two; value <= PlayingCardValue.Ace; value++)
 				{
-					deckOfCards[cardNr1++] = new PlayingCard
-					{
-						Color = c,
-						Value = v
-					};
+					//Alternative way as long as PlayingCard is a struct
+					deckOfCards[cardNr1].Color = color;
+					deckOfCards[cardNr1].Value = value;
+
+					//Alternative way working for PlayingCard being both class and struct
+					deckOfCards[cardNr1] = new PlayingCard { Color = color, Value = value };
+
+					//Prepare to initialize next card
+					cardNr1++;
 				}
 			}
+
+			//You can also use a foreach loop to initialize the deck of cards
+			cardNr1 = 0;
+			foreach (PlayingCardColor color in typeof(PlayingCardColor).GetEnumValues())
+			{
+				foreach (PlayingCardValue value in typeof(PlayingCardValue).GetEnumValues())
+				{
+					//Alternative way as long as PlayingCard is a struct
+					deckOfCards[cardNr1].Color = color;
+					deckOfCards[cardNr1].Value = value;
+
+					//Alternative way working for PlayingCard being both class and struct
+					deckOfCards[cardNr1] = new PlayingCard { Color = color, Value = value };
+
+					//Prepare to initialize next card
+					cardNr1++;
+				}
+			}
+
 
 			Console.WriteLine("The complete deck");
             foreach (var item in deckOfCards)
