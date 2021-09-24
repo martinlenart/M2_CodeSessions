@@ -37,6 +37,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShelf", "BookShelf\Book
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountNumbers", "CountNumbers\CountNumbers.csproj", "{D1058458-2278-46CA-91B0-7C67203E8118}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPals", "MyPals\MyPals.csproj", "{EAD78FE5-90A0-4CA3-81ED-D0DA84696E86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticVsNonStatic", "StaticVsNonStatic\StaticVsNonStatic.csproj", "{A9AAD6EC-9D14-4071-893A-9FBA32B4DB93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{D1058458-2278-46CA-91B0-7C67203E8118}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1058458-2278-46CA-91B0-7C67203E8118}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1058458-2278-46CA-91B0-7C67203E8118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD78FE5-90A0-4CA3-81ED-D0DA84696E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD78FE5-90A0-4CA3-81ED-D0DA84696E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD78FE5-90A0-4CA3-81ED-D0DA84696E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD78FE5-90A0-4CA3-81ED-D0DA84696E86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9AAD6EC-9D14-4071-893A-9FBA32B4DB93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AAD6EC-9D14-4071-893A-9FBA32B4DB93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9AAD6EC-9D14-4071-893A-9FBA32B4DB93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9AAD6EC-9D14-4071-893A-9FBA32B4DB93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
